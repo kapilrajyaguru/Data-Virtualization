@@ -119,6 +119,22 @@ Create a custom resource with the following format.
         oc apply -f dv-service.yaml
 
   When you create the custom resource, the Data Virtualization operator installs Data Virtualization.
+  
+ - Get the status of Data Virtualization (dv-service):
+   Run the following command:
+
+		oc get dvservice dv-service
+
+   The result is similar to the following example, where the READY field indicates whether the DvService is installed.
+
+		NAME         READY
+		dv-service   True
+
+ - To check whether the DvService has finished installing Data Virtualization service pods, run the following command:
+
+		oc get DvService dv-service -o jsonpath="{.status.reconcileStatus}"
+
+   Data Virtualization is installed when the command returns Completed. You must now provision a Data Virtualization instance to use Data Virtualization.
 
 # Step 7 - Provision the Data Virtualization service:
 
