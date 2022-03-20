@@ -18,11 +18,11 @@ User has knowledge and experience managing Red Hat OpenShift cluster
 
 # Step 1: Download files from the GitHub repo using the following command.
 
-        git clone https://github.com/kapilrajyaguru/Watson-Knowledge-Catalog-Installation.git
+        git clone https://github.com/kapilrajyaguru/Data-Virtualization.git
 
   After downloading files, switch to the Watson-Knowledge-Catalog-Installation directory.
         
-        cd Watson-Knowledge-Catalog-Installation/
+        cd Data-Virtualization/
 
 # Step 2 - Creating an operator subscription for services
 
